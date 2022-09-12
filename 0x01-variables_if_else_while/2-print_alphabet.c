@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print lowercase a-z
+ *main - print lowercase a-z
  *Remain: Always 0 (Success)
  */
 
@@ -15,6 +15,5 @@ int main(void)
 		alpha++;
 	}
 	putchar('\n');
-
 	return (0);
 }
