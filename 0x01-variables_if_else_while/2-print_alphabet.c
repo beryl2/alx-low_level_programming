@@ -2,12 +2,13 @@
 
 /**
  * main - print lowercase a-z
- * Return: Always 0 (Success)
+ *Remain: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alpha = 'a';
+	char apha = 'a';
+
 	while (alpha <= 'z')
 	{
 		putchar(alpha);
