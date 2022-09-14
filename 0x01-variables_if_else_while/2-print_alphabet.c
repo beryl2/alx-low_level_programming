@@ -12,6 +12,7 @@ int main(void)
 
 	while (alpha <= 'z')
 	{
+		:wq
 		putchar(alpha);
 		alpha++;
 	}
