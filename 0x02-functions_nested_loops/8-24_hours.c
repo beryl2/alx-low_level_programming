@@ -1,15 +1,25 @@
+#include <stdio.h>
 #include "main.h"
-#include "6-abs.c"
+
 /**
- * print_last_digit - main function
- *
- * @n: integer to get last digit
- * Return: last digit of n
+ * jack_bauer - main stuff (the countdown)
  *
  */
-
-int print_last_digit(int n)
+void jack_bauer(void)
 {
-	_putchar('0' + _abs(n % 10));
-	return (_abs(n % 10));
+	int i;
+	int j;
+
+	for (i = 0; i <= 23; i++)
+	{
+		for (j = 0; j <= 59; j++)
+		{
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
