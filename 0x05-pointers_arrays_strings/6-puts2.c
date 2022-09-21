@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * puts - puts string twice
+ * puts2 - puts string twice
  *
  * @str: string to put twice
  */
