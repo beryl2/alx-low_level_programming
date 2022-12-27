@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
  * add - adding stuff up mate
- * @a: first interger
+ * @a: first integer
  * @b: second integer
  * Return: 0
  */
