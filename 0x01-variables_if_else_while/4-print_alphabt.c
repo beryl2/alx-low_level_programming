@@ -6,7 +6,6 @@
  */
 
 int main(void)
-
 {
 	char alpha = 'a';
 
@@ -19,5 +18,6 @@ int main(void)
 		alpha++
 	}
 	putchar('\n');
+	
 	return (0);
 }
