@@ -2,21 +2,20 @@
 
 /**
  * reverse_array - reverse array elements
- * @a: array
- * @n: number of elements in array
+ * @a: array to reverse
+ * @n: size of array
  */
 
 void reverse_array(int *a, int n)
 {
 
-	int tmp, beg = 0;
-	int end = n - 1; /* omit null terminator in length */
+	int i;
+	int x;
 
-	while (beg < end)
+	for (i = 0; i < n / 2; i++)
 	{
-		tmp = *(a + beg);
-		*(a + beg) = *(a + end);
-		*(a + end) = tmp;
-		beg++, end --;
+		x = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = x;
 	}
-}	 
+}	
