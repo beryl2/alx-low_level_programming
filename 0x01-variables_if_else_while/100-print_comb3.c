@@ -1,29 +1,32 @@
 #include <stdio.h>
-
 /**
- *main - Entry point, print 00 to 99 using putchar
- *Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
-
 int main(void)
 {
-	int tens;
-	int ones;
+	int i;
+	int j;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (i = 10; i <= 19; i++)
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (j = 10; j <= 19; j++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens == '9' && ones == '9')) /*skip comma at end*/
+			if ((j % 10) > (i % 10))
 			{
-				putchar(',');
-				putchar(' ');
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 18 || j != 19)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
